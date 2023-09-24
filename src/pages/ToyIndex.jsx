@@ -57,12 +57,11 @@ export function ToyIndex() {
 
     return (
         <div>
-            <h3>misterToy</h3>
             <main>
-                <button><Link to="/toy/edit" >Add Toy</Link></button>
                 <ToyFilter filterBy={filterBy} setFilterBy={setFilterBy} />
                 <ToySort sortBy={sortBy} onSetSortBy={onSetSortBy} />
-
+                <button><Link to="/toy/edit" >Add Toy</Link></button>
+        
                 {!isLoading && <ToyList
                     toys={toys}
                     onRemoveToy={onRemoveToy}
