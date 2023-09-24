@@ -8,7 +8,6 @@ export function HomePage() {
             <h2>
                 misterToy
             </h2 >
-            <img src={logoUrl} />
         </section >
     )
 }
